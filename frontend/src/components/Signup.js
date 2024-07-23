@@ -23,7 +23,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8000/api/v3/users/register", user, { withCredentials: true });
+      const response = await axios.post("https://server-lake-kappa.vercel.app/api/v3/users/register", user, { withCredentials: true });
       console.log(response);
       setSuccess(true);
       setUser({
