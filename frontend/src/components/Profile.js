@@ -12,7 +12,7 @@ function Profile({ setIsLoggedIn }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get("https://server-lake-kappa.vercel.app/api/v3/users/user-details", {
+        const response = await axios.get("https://server-six-fawn-23.vercel.app/api/v3/users/user-details", {
           withCredentials: true,
         });
         setUser(response.data.data);
