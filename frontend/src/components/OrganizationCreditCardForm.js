@@ -27,7 +27,7 @@ function OrganizationCreditCardForm({organizationId, setOrganizationId}) {
     console.log('Form submitted:', formData);
 
     try {
-      const response = await axios.post("http://localhost:8000/api/v3/card/add", formData, { withCredentials: true });
+      const response = await axios.post("https://server-lake-kappa.vercel.app/api/v3/card/add", formData, { withCredentials: true });
       console.log(response);
       const orgId = response.data.data._id;
       setOrganizationId(orgId);
