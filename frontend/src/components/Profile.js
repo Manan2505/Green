@@ -29,7 +29,7 @@ function Profile({ setIsLoggedIn }) {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:8000/api/v3/users/logout", {}, {
+      await axios.post("https://server-six-fawn-23.vercel.app/api/v3/users/logout", {}, {
         withCredentials: true,
       });
       setIsLoggedIn(false);
