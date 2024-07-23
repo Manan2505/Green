@@ -12,7 +12,7 @@ function StudentCardDetails({stuId}) {
   useEffect(() => {
     const fetchStudentDetails = async () => {
       try {
-        const response = await axios.get(`https://server-lake-kappa.vercel.app/api/v3/studentcard/${studentId || studentId2}`, { withCredentials: true });
+        const response = await axios.get(`https://server-six-fawn-23.vercel.app/api/v3/studentcard/${studentId || studentId2}`, { withCredentials: true });
         setStudentDetails(response.data.data);
         setLoading(false);
       } catch (error) {
