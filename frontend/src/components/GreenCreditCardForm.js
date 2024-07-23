@@ -24,7 +24,7 @@ function GreenCreditCardForm({studentId, setStudentId}) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/v3/studentcard/student-credit', formData, { withCredentials: true });
+      const response = await axios.post('https://server-lake-kappa.vercel.app/api/v3/studentcard/student-credit', formData, { withCredentials: true });
       console.log('Form submitted:', response.data);
       const stuId = response.data.data?._id;
       setStudentId(stuId);
