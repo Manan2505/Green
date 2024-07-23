@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     async function checkAuth() {
       try {
-        const response = await axios.get("https://server-lake-kappa.vercel.app/api/v3/users/user-details", {
+        const response = await axios.get("https://server-six-fawn-23.vercel.app/api/v3/users/user-details", {
           withCredentials: true,
         });
         const userData = response.data.data;
