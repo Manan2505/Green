@@ -71,7 +71,7 @@ function Tasks({ credit, setCredit, role }) {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("https://server-lake-kappa.vercel.app/api/v3/users/user-details", {
+        const response = await axios.get("https://server-six-fawn-23.vercel.app/api/v3/users/user-details", {
           withCredentials: true,
         });
         const user = response.data;
@@ -109,7 +109,7 @@ function Tasks({ credit, setCredit, role }) {
           }
         });
 
-        await axios.put("https://server-lake-kappa.vercel.app/api/v3/users/update-tasks", formData, {
+        await axios.put("https://server-six-fawn-23.vercel.app/api/v3/users/update-tasks", formData, {
           withCredentials: true,
           headers: {
             'Content-Type': 'multipart/form-data',
