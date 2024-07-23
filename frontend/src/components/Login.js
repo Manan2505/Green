@@ -24,7 +24,7 @@ function Login({ setIsLoggedIn, setUser, setRole }) {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8000/api/v3/users/login", loginDetails, {
+      const response = await axios.post("https://server-lake-kappa.vercel.app/api/v3/users/login", loginDetails, {
         withCredentials: true,
       });
 
