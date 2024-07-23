@@ -20,7 +20,7 @@ function ContactUs() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://server-lake-kappa.vercel.app/api/v3/contactUs', formData);
+      const response = await axios.post('https://server-six-fawn-23.vercel.app/api/v3/contactUs', formData);
       setResponseMessage(response.data.message);
       console.log("email sent");
       setFormData({
